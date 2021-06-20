@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/p_style.css" />
+		<link rel="stylesheet" href="css/media.css" />
+
+		<title>Parallaxie</title>
+	</head>
+
+	<body>
+		<!-- Header start -->
+		<header class="header-area">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid p-0">
+						<a class="navbar-brand a-logo" href="index.html"
+							><img class="" src="images/logo1.png" alt="Logo"
+						/></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div
+							class="collapse navbar-collapse menu"
+							id="navbarSupportedContent"
+						>
+							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="index.html"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Feature</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Portfolio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Newsletter</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- Header end -->
+
+		<!-- Banner start -->
+		<section class="banner parallaxie">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8 col-lg-10">
+						<h1>WAKE THE DESIGN</h1>
+						<p>
+							Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+							Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+							dui. Donec sollicitudin molestie malesuada. Nulla porttitor
+							accumsan tincidunt.
+						</p>
+						<button>who we are?</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Banner end -->
+
+		<!-- Slogan start -->
+		<section class="slogan">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<p class="text-center p-0">
+							“Donec rutrum congue leo eget malesuada. Vivamus magna justo,
+							lacinia eget consectetur sed, convallis at tellus. Praesent sapien
+							massa, convallis a pellentesque nec, egestas non nisi.”
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Slogan end -->
+
+		<!-- JS links -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<!-- <script src="js/jquery.min.js"></script> -->
+		<script src="vendor/parallaxie/parallaxie.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- <script src="js/script.js"></script> -->
+		<script>
+			// Sticky menu
+			$(window).on("scroll", function () {
+				if ($(this).scrollTop() > 20) {
+					$(".header-area").addClass("sticky");
+				} else {
+					$(".header-area").removeClass("sticky");
+				}
+			});
+
+			// Parallaxie
+			$(".parallaxie").parallaxie({
+				speed: 0.5,
+			});
+		</script>
+	</body>
+</html>

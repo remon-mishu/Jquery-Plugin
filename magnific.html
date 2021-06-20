@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Magnific CSS -->
+		<link rel="stylesheet" href="vendor/magnific/magnific-popup.css" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media.css" />
+
+		<title>Magnific Popup</title>
+	</head>
+
+	<body class="mag-pop">
+		<section class="counterUp common">
+			<div class="container">
+				<div class="row text-center f-row">
+					<h1>This is Magnific Popup Plugin</h1>
+				</div>
+			</div>
+		</section>
+
+		<section class="image">
+			<div class="container">
+				<div class="row justify-content-center">
+					<h2 class="text-center">Click the Images</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<a href="images/1.jpg" class="gallery-item">
+							<img src="images/1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<a href="images/2.jpg" class="gallery-item">
+							<img src="images/2.jpg" alt="" />
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<a href="images/3.jpg" class="gallery-item">
+							<img src="images/3.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JS links -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<!-- <script src="js/jquery.min.js"></script> -->
+		<script src="vendor/magnific/jquery.magnific-popup.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- <script src="js/script.js"></script> -->
+		<script>
+			$(".gallery-item").magnificPopup({
+				type: "image",
+				gallery: {
+					enabled: true,
+				},
+			});
+		</script>
+	</body>
+</html>
